@@ -1,5 +1,5 @@
 @Library('gitClone') _
-
+import Git Clone.git
 pipeline {
   agent any 
   stages {
