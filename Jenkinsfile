@@ -1,6 +1,6 @@
 @Library('gitClone') _
 
-Pipeline {
+pipeline {
   agent any 
   stages {
     stage('clone and build'){
