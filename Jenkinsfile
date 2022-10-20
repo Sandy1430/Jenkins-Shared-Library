@@ -1,9 +1,11 @@
-@Library('gitClone')_
+@Library('gitClone') _
 
 Pipeline {
   agent any 
   stages {
-    git
-    maven
+    stage('clone and build'){
+      git
+      maven
+    }
   }
 }
