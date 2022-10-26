@@ -10,7 +10,7 @@ pipeline {
           stage ('Maven Stage') {
                steps {
                        
-                       maven.mavenBuild
+                       maven 'User'
                }     
           }
      }
