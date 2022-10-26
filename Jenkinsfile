@@ -1,4 +1,7 @@
-@Library('gitClone') _
-
-git
-maven
+libraries {
+     lib('gitClone')
+ }
+pipeline {
+  git
+  maven
+}
