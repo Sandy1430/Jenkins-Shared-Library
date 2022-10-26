@@ -7,9 +7,9 @@ pipeline {
                     gitClone 'User'
                }
           }
-          stage ('Maven Build') {
+          stage ('Maven Stage') {
                steps {
-                    maven 'User'
+                    maven.mavenBuild
                }
           }
      }
