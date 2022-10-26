@@ -4,7 +4,7 @@ pipeline {
      stages {
           stage('Pull Code From GitHub') {
                steps {
-                    gitClone 'User'
+                    gitClone
                }
           }
      }
