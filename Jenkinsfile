@@ -9,8 +9,10 @@ pipeline {
           }
           stage ('Maven Stage') {
                steps {
+                  script {
                     maven.mavenBuild()
-               }
+                  }
+               }     
           }
      }
 }
