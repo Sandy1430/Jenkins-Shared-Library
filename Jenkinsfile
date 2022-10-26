@@ -6,6 +6,5 @@ pipeline {
      stages {
           stage('Pull Code From GitHub') {
                git
-               maven
      }
 }
