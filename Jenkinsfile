@@ -2,6 +2,9 @@ libraries {
      lib('gitClone')
  }
 pipeline {
-  git
-  maven
+     agent any
+     stages {
+          git
+          maven
+     }
 }
