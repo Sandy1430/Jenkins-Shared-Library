@@ -7,7 +7,9 @@ pipeline {
           stage('Pull Code From GitHub') {
                steps {
                     step {
-                         git
+                         script {
+                              git
+                         }
                     }
                }
           }
