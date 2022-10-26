@@ -9,8 +9,8 @@ pipeline {
           }
           stage ('Maven Stage') {
                steps {
-                       def mvnHome = tool name: 'maven3' , type: 'maven'
-                       maven.mavenBuild('${mvnHome}')
+                       
+                       maven.mavenBuild
                }     
           }
      }
