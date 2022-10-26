@@ -1,4 +1,4 @@
-def mavenBuild(){
+def mavenBuild(String mvnHome){
  stage ('Maven Build') {
 
     def mvnHome = tool name: 'maven3' , type: 'maven'
