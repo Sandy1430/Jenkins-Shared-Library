@@ -4,12 +4,8 @@ pipeline {
     agent any
     stages {
         stage('Pull Code From GitHub') {
-            steps {
-                step {
-                    git
-                }
-                @git
-                @maven
+            step {
+                git
             }
         }
     }
