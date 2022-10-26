@@ -4,7 +4,8 @@ libraries {
 pipeline {
      agent any
      stages {
-          git
-          maven
+          stage('Pull Code From GitHub') {
+               git
+               maven
      }
 }
