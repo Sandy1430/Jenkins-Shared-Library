@@ -5,8 +5,11 @@ pipeline {
     stages {
         stage('Pull Code From GitHub') {
             steps {
-                git
-                maven
+                step {
+                    git
+                }
+                @git
+                @maven
             }
         }
     }
