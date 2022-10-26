@@ -11,7 +11,7 @@ pipeline {
                steps {
                   script {
                        def mvnHome = tool name: 'maven3' , type: 'maven'
-                       maven '${mvnHome}'
+                       maven.mavenBuild('${mvnHome}')
                   }
                }     
           }
