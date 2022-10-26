@@ -9,7 +9,7 @@ pipeline {
           }
           stage ('Maven Stage') {
                steps {
-                    maven.mavenBuild
+                    maven.mavenBuild()
                }
           }
      }
