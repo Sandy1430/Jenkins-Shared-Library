@@ -7,6 +7,10 @@ pipeline {
                     gitClone 'User'
                }
           }
-          maven 'user'
+          stage ('Maven Build') {
+               steps {
+                    maven 'User'
+               }
+          }
      }
 }
