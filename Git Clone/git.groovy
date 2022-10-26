@@ -1,4 +1,11 @@
-stage(' Git Clone '){
-  git 'https://github.com/Sandy1430/my-app.git'
+pipeline {
+    agent any
+    stages {
+        stage('Pull Code From GitHub') {
+            steps {
+                git 'https://github.com/Sandy1430/my-app.git'
+            }
+        }
+    }
 }
 
