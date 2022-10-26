@@ -1,6 +1,4 @@
-libraries {
-     lib('gitClone')
- }
+@Library ('gitClone') _
 pipeline {
      agent any
      stages {
