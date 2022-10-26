@@ -8,9 +8,8 @@ pipeline {
                }
           }
           stage ('Maven Stage') {
-               steps {
-                       
-                       maven 'User'
+               steps {                      
+                     mavenBuild 'User'
                }     
           }
      }
