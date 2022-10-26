@@ -5,8 +5,8 @@ pipeline {
   stages {
     stage('clone and build'){
       steps{
-        git
-        maven
+        @git
+        @maven
       }
     }
   }
