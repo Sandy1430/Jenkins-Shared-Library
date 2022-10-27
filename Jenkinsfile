@@ -1,4 +1,4 @@
-libraries {
+library {
   lib('gitClone@main')
 }
 pipeline {
