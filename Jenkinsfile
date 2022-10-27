@@ -8,7 +8,7 @@ pipeline {
           stage('Pull Code From GitHub') {
                steps {
                     gitClone 'User'
-                    echo '${mvnHome}'
+                    echo 'mvnHome = ${mvnHome}'
                }
           }
           stage ('Maven Stage') {
