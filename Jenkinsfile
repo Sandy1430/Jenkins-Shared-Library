@@ -9,6 +9,7 @@ pipeline {
           DOCKERHUB_CREDENTIALS= credentials('DockerPass')     
      }
      stages {
+          
           stage('Pull Code From GitHub') {
                steps {
                     gitClone 'User'
@@ -27,10 +28,16 @@ pipeline {
                          dockerBuild.dockerBuild()
                          dockerPush.dockerPush()
                          dockerRun.dockerRun()
-                         post.postBuild()
                     }
                }     
           }
+          stage ('Post Build') {
+               steps {
+                    script {
+                         post.postBuild()
+                    }
+               }
+          }
+          
      }
-
 }
