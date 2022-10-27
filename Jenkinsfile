@@ -27,11 +27,10 @@ pipeline {
                          dockerBuild.dockerBuild()
                          dockerPush.dockerPush()
                          dockerRun.dockerRun()
+                         post.postBuild()
                     }
                }     
           }
      }
-     script {
-          post.postBuild()
-     }
+
 }
