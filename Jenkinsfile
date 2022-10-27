@@ -33,8 +33,12 @@ pipeline {
           }
           stage ('Post Build') {
                steps {
-                    script {
-                         post.postBuild()
+                    post {
+                         always {
+                              script {
+                                   post.postBuild()
+                              }
+                         }
                     }
                }
           }
