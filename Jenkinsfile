@@ -6,7 +6,7 @@ pipeline {
           maven 'maven3'
      }
      environment {
-          DockerCredentials = credentials ('DockerPass')
+          DOCKERHUB_CREDENTIALS= credentials('DockerPass')     
      }
      stages {
           stage('Pull Code From GitHub') {
