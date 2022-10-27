@@ -1,6 +1,5 @@
-library {
-  lib('gitClone@main')
-}
+@Library ('gitClone') _
+
 pipeline {
      agent any
      tools {
