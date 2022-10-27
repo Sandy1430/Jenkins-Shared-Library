@@ -31,13 +31,12 @@ pipeline {
                     }
                }     
           }
-          stage ('Post Build') {
-               post {
-                    always {
-                         post()
-                    }
-               }
-          }
-          
      }
+         
+     post {
+          always {
+               post()
+          }
+     }
+         
 }
