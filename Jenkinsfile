@@ -8,8 +8,10 @@ pipeline {
                }
           }
           stage ('Maven Stage') {
-               steps {                      
-                     mavenBuild 'User'
+               steps {   
+                    script {
+                         mavenBuild.mavenBuild()
+                    }
                }     
           }
      }
