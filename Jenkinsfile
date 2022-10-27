@@ -31,5 +31,7 @@ pipeline {
                }     
           }
      }
-     post.postBuild()
+     script {
+          post.postBuild()
+     }
 }
